@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CineCurate 2026</title>
+    <style>
+        :root {
+            --bg-color: #12141c;
+            --card-bg: #1a1d28;
+            --text-main: #ffffff;
+            --text-sub: #9ca3af;
+            --accent-red: #e50914;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #2a2e3d;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--text-main);
+        }
+
+        nav a {
+            color: var(--text-sub);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        nav a.active {
+            color: var(--accent-red);
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+        }
+
+        /* 핵심 감독 스포트라이트 스타일 */
+        .spotlight-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .director-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .director-img {
+            width: 70px;
+            height: 90px;
+            background-color: #333;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .director-info h3 {
+            margin: 0 0 2px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .director-pronunciation {
+            font-size: 12px;
+            color: var(--text-sub);
+            margin-bottom: 8px;
+        }
+
+        .director-filmo {
+            font-size: 12px;
+            color: var(--text-sub);
+            line-height: 1.4;
+        }
+
+        .director-filmo p {
+            margin: 3px 0;
+        }
+
+        .director-filmo strong {
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 네비게이션 -->
+    <header>
+        <div class="logo">FilmeCurate 2026</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Festivals</a>
+            <a href="#" class="active">Curation</a>
+            <a href="#">Archives</a>
+        </nav>
+        <div>Profile</div>
+    </header>
+
+    <!-- 핵심 감독 스포트라이트 세션 -->
+    <div class="section-title">핵심 감독 스포트라이트</div>
+    <div class="spotlight-container">
+
+        <!-- Martin Scorsese -->
+        <div class="director-card">
+            <div class="director-img"></div>
+            <div class="director-info">
+                <h3>Martin Scorsese</h3>
+                <div class="director-pronunciation">마틴 스코세이지</div>
+                <div class="director-filmo">
+                    <p><strong>Debut:</strong> Who's That Knocking...</p>
+                    <p><strong>Hit Films:</strong> Goodfellas, The Departed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bong Joon-ho (한국 감독: 발음 없음) -->
+        <div class="director-card">
+            <div class="director-img"></div>
+            <div class="director-info">
+                <h3>Bong Joon-ho</h3>
+                <div class="director-filmo" style="margin-top: 15px;">
+                    <p><strong>Debut:</strong> Barking Dogs Never Bite</p>
+                    <p><strong>Hit Films:</strong> Parasite, Memories of Murder</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agnès Varda -->
+        <div class="director-card">
+            <div class="director-img"></div>
+            <div class="director-info">
+                <h3>Agnès Varda</h3>
+                <div class="director-pronunciation">아네스 바르다</div>
+                <div class="director-filmo">
+                    <p><strong>Debut:</strong> La Pointe Courte</p>
+                    <p><strong>Hit Films:</strong> Cleo from 5 to 7, Vagabond</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Christopher Nolan -->
+        <div class="director-card">
+            <div class="director-img"></div>
+            <div class="director-info">
+                <h3>Christopher Nolan</h3>
+                <div class="director-pronunciation">크리스토퍼 놀란</div>
+                <div class="director-filmo">
+                    <p><strong>Debut:</strong> Following</p>
+                    <p><strong>Hit Films:</strong> Inception, Oppenheimer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Park Chan-wook (한국 감독: 발음 없음) -->
+        <div class="director-card">
+            <div class="director-img"></div>
+            <div class="director-info">
+                <h3>Park Chan-wook</h3>
+                <div class="director-filmo" style="margin-top: 15px;">
+                    <p><strong>Debut:</strong> The Moon is... the Sun's Dream</p>
+                    <p><strong>Hit Films:</strong> Oldboy, Decision to Leave</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lee Chang-dong (한국 감독: 발음 없음) -->
+        <div class="director-card">
+            <div class="director-img"></div>
+            <div class="director-info">
+                <h3>Lee Chang-dong</h3>
+                <div class="director-filmo" style="margin-top: 15px;">
+                    <p><strong>Debut:</strong> Green Fish</p>
+                    <p><strong>Hit Films:</strong> Burning, Secret Sunshine</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
